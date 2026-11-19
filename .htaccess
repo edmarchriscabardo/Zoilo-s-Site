@@ -1,0 +1,4 @@
+# Block direct web access to secrets and SQL dumps (Apache)
+<FilesMatch "^(\.env.*|.*\.sql|.*\.md)$">
+    Require all denied
+</FilesMatch>
